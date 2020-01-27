@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/Yash/Desktop/UIUC_RA/July Work/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yash/Desktop/UIUC_RA/July Work/lucene-7.4.0/lucene-7.4.0/analysis/common/lucene-analyzers-common-7.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yash/Desktop/UIUC_RA/July Work/lucene-7.4.0/lucene-7.4.0/core/lucene-core-7.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yash/Desktop/UIUC_RA/July Work/lucene-7.4.0/lucene-7.4.0/join/lucene-join-7.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yash/Desktop/UIUC_RA/July Work/lucene-7.4.0/lucene-7.4.0/queries/lucene-queries-7.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yash/Desktop/UIUC_RA/July Work/lucene-7.4.0/lucene-7.4.0/queryparser/lucene-queryparser-7.4.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

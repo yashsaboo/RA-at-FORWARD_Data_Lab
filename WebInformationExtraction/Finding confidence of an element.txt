@@ -1,0 +1,38 @@
+Finding confidence of an element: Find at least one label from TIP (Title, Image and Price) which has "High" Probability and then use that element to find other elements. "High" is given by following threshold values for each case
+1. Price:
+Text Similarity Algorithm: SequenceMatcher from diff library
+	if sim(price)>0.8:
+		High
+	elif sim(price)>0.5:
+		Medium
+	else:
+		Low
+
+2. Heading:
+Text Similarity Algorithm: SequenceMatcher from diff library
+	if sim(heading)>0.7:
+		High
+	elif sim(heading)>0.5:
+		Medium
+	else:
+		Low
+
+Which HTML tags to consider for finding the element? (Performed in order of preference: One only goes down the following priority, if current tag didn't give atleast 'Medium' similarity. Eg: If the heading <h*> tag's element gave a similarity of Medium/High, then you have found the right element and you don't go further, or else you will have to go to search for your element in next priority order tag which is <span> and so on.)
+1. <h*> Heading Tags
+2. <span> tags
+3. Any tags which has "price"/"title" string present in their class/id/name attribute for Price and Heading Labelling respectively.
+
+3. Images:
+Image Similarity Algorithm: AverageHashing from ImageHash library
+	if sim(image)>0.7:
+		High
+	elif sim(image)>0.5:
+		Medium
+	else:
+		Low
+
+Other features to consider while finding prospective images for aforementioned similarity task:
+1. The image should be in the fourth quadrant of the page.
+2. If more than one image produces a 'High' similarity then choose the element with the biggest size.
+
+Note: Use only first two product images to perform similarity and choose the one which has highest similarity
